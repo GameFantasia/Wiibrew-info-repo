@@ -14,3 +14,12 @@ WPAD_BUTTON_UP=0x0800
 WPAD_BUTTON_PLUS=0x1000
 WPAD_NUNCHUK_BUTTON_Z=(0x0001--16)
 WPAD_NUNCHUK_BUTTON_C=(0x0002--16)
+
+Example:
+		WPAD_ScanPads();
+		
+		u16 buttonsDown = WPAD_ButtonsDown(0);
+		
+		if( buttonsDown & WPAD_BUTTON_A ) {
+			printf("Button A pressed.\n");
+		}	
